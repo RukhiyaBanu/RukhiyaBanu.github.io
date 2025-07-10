@@ -18,6 +18,13 @@ nav {
     background-color: rgba(255, 255, 255, 0.238);
     padding: 15px 20px;
     border-radius: 100px;
+    background: #d5b2d1;
+    border-radius: 70px;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(5.3px);
+    -webkit-backdrop-filter: blur(5.3px);
+    border: 0.1px solid rgb(254 254 254 / 18%);
+    stroke: 0.1px solid white;
 }
 nav ul a{
     text-decoration: none;
@@ -26,15 +33,18 @@ nav ul a{
     align-items: center;
     justify-content: center;
 }
-nav ul{
+nav ul {
     display: flex;
     justify-content: space-between;
     gap: 45px;
+    margin: 0;
 }
-.navbar{
+.navbar {
+    position: fixed;
     display: flex;
     justify-content: space-between;
-    position: fixed;
+    width: -webkit-fill-available;
+    
 }
 /* hero-section */
 #hero{
@@ -44,17 +54,46 @@ nav ul{
     width: 100%;
 
 }
-.hero-cnt h3{
-    
-}
+
 .hero-cnt{
     color: white;
     font-family: "Merienda", cursive;
+    height: 100vh;
+    justify-content: center;
+    display: flex;
+    flex-direction: column;
 }
 .icons{
     display: flex;
     flex-direction: row;
     gap: 14px;
-    position: absolute;
     width: fit-content;
+}
+.hero-cnt h1{
+    font-size: 4rem;
+    font-weight: bold;
+    color: #fce4ec;
+    text-shadow: 2px 2px 2px rgba(0, 0, 0, 1);
+    margin: 0;
+}
+.hero-cnt h3{
+    font-size: 1.5rem;
+    font-weight: 300;
+    color: #f3f3f3;
+    letter-spacing: 2px;
+    margin-top: 1rem;
+}
+.resum-btn {
+    background-color: rgba(255, 255, 255, 0.275);
+    padding: 5px 30px;
+    border-radius: 60px 0px 60px 0px;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    /* justify-content: space-between; */
+}
+.social-icons{
+    background-color: rgba(255, 255, 255, 0.275);
+    padding: 15px 20px;
+    border-radius: 100px;
 }
