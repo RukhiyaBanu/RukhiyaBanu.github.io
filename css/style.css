@@ -14,6 +14,9 @@ ul{
     color: white;
     top: 0;
 } */
+ body{
+    background-color: #FAEDF3;
+ }
 nav {
     background-color: rgba(255, 255, 255, 0.238);
     padding: 15px 20px;
@@ -68,18 +71,20 @@ nav ul {
     flex-direction: row;
     gap: 14px;
     width: fit-content;
+}.hero-cnt h2{
+    color: #776971;
 }
 .hero-cnt h1{
     font-size: 4rem;
     font-weight: bold;
-    color: #fce4ec;
+    color: #674550;
     text-shadow: 2px 2px 2px rgba(0, 0, 0, 1);
     margin: 0;
 }
 .hero-cnt h3{
     font-size: 1.5rem;
     font-weight: 300;
-    color: #f3f3f3;
+    color: #776971;
     letter-spacing: 2px;
     margin-top: 1rem;
 }
@@ -97,3 +102,91 @@ nav ul {
     padding: 15px 20px;
     border-radius: 100px;
 }
+/* about section */
+.mt-60{
+    margin-top: 123px;
+}
+.paragraph{
+    padding: 10px 15px;
+    color: black;
+    opacity: 50%;
+}
+.about {
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    
+}
+.about-cnt{
+    border-radius: 24px;
+    position: relative;
+    padding: 25px 25px;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(5.3px);
+    -webkit-backdrop-filter: blur(55.3px);
+    transition: 0.3;
+}
+.about-cnt::before {
+            content: '';
+            position: absolute;
+            inset: 0;
+            z-index: 0;
+            border-radius: 28px;
+            box-shadow:
+inset var(--shadow-offset) var(--shadow-offset) var(--shadow-blur) var(--shadow-spread) var(--shadow-color) rgb(225, 225, 225 /12%);
+            background-color:#CFAEBF;
+        }
+        .about-cnt h1{
+            display: flex;
+            position: relative;
+            justify-content: center;
+            flex-direction: row;
+            align-items: center;
+            color: rgba(0, 0, 0, 0.03);
+            font-family:  'Metal Mania', cursive;
+            top: 25px;
+            font-size: 82px;
+
+        }
+        .about-cnt h2{
+            font-family: "Merienda", cursive;
+            font-size: 35px;
+            display: flex;
+            align-items: center;
+            position: relative;
+            justify-content: center;
+            flex-direction: row;
+            color: #FBF5F5;
+            background-color: linear-gradient(87deg, #ffffff, #CFAEBF);
+            -webkit-background-clip: text;
+            /* -webkit-text-fill-color: transparent; */
+
+    /* margin-bottom: 10px; */
+    /* border: 1px solid; */
+    top: px;
+    position: relative;
+    margin-top: -53px;
+}
+
+
+
+
+/* providing */
+.service-cnt h1{
+    font-family: "Merienda", cursive;
+    color: #C49AB2;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row;
+
+}
+.content p{
+    display: flex;
+    align-items: center;
+    text-align: center;
+    max-width: 35%;
+    justify-content: center;
+    color: black;
+}
+        
