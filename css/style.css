@@ -170,12 +170,12 @@ nav {
 }
 nav::before {
     content: '';
-    position: absolute;
+    position: relative;
     inset: 0;
     z-index: 100;
     border-radius: 28px;
     box-shadow: inset var(--shadow-offset) var(--shadow-offset) var(--shadow-blur) var(--shadow-spread) rgb(255 255 255 / 9%);
-    background-color: #8b5d7ed1;
+    background-color: #8b5d7e;
 }
         nav::after {
             content: '';
@@ -200,7 +200,7 @@ header nav ul{
 }
 header nav ul a{
     text-decoration: none;
-    color: rgba(255, 255, 255, 0.539);
+    color: white;
    
 }
 header nav ul a {
@@ -245,6 +245,7 @@ header nav ul a:hover::before {
     isolation: isolate;
     touch-action: none;
     box-shadow: 0px 6px var(--outer-shadow-blur) rgba(0, 0, 0, 0.2);
+    margin-left: 1166px;
 }
 
         .hire-btn::before {
@@ -799,52 +800,7 @@ span.year {
     
 }
 
-/* .works  .grid-container {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(600px, 1fr));
-    justify-items: center;
-    margin: auto;
-}
-.work  .card {
-    position: relative;
-    overflow: hidden;
-    border-radius: 10px;
-    cursor: pointer;
-    width: 600px;
-    height: 600px;
-    transition: opacity 0.5s ease, transform 0.5s ease;
-    margin: 23px 23px;
-} */
-/* .work  .card {
-    position: relative;
-    overflow: hidden;
-    border-radius: 10px;
-    cursor: pointer;
-    width: 600px;
-    height: 600px;
-    transition: opacity 0.5s ease, transform 0.5s ease;
-    margin: 23px 23px;
-}
-.work  .card-3 {
-    position: relative;
-    overflow: hidden;
-    border-radius: 10px;
-    cursor: pointer;
-    width: 600px;
-    height: 600px;
-    transition: opacity 0.5s ease, transform 0.5s ease;
-    margin: 23px 23px;
-}
-.work  .card-4 {
-    position: relative;
-    overflow: hidden;
-    border-radius: 10px;
-    cursor: pointer;
-    width: 600px;
-    height: 600px;
-    transition: opacity 0.5s ease, transform 0.5s ease;
-    margin: 23px 23px;
-} */
+
  
 .works  .grid-container {
     display: grid;
@@ -910,14 +866,26 @@ span.year {
 .works .card-1 img{
     filter: grayscale(1);
 }
+.works .card-1 img:hover{
+    filter: grayscale(0);
+}
 .works .card-2 img{
     filter: grayscale(1);
+}
+.works .card-2 img:hover{
+    filter: grayscale(0);
 }
 .works .card-3 img{
     filter: grayscale(1);
 }
+.works .card-2 img:hover{
+    filter: grayscale(0);
+}
 .works .card-4 img{
     filter: grayscale(1);
+}
+.works .card-4 img:hover{
+    filter: grayscale(0);
 }
 
 
@@ -1454,4 +1422,48 @@ section#footer {
     justify-content: center;
     border-radius: 100px;
     color: white;
+}
+.works  .card-01 {
+    position: relative;
+    overflow: hidden;
+    border-radius: 5px!important;
+    cursor: pointer;
+    width: 600px;
+    height: 600px;
+    transition: opacity 0.5s ease, transform 0.5s ease;
+    margin: 23px 23px;
+    
+}
+.works  .card-04 {
+    position: relative;
+    overflow: hidden;
+    border-radius: 5px!important;
+    cursor: pointer;
+    width: 600px;
+    height: 600px;
+    transition: opacity 0.5s ease, transform 0.5s ease;
+    margin: 23px 23px;
+    
+}
+.works  .card-02 {
+    position: relative;
+    overflow: hidden;
+    border-radius: 5px!important;
+    cursor: pointer;
+    width: 600px;
+    height: 600px;
+    transition: opacity 0.5s ease, transform 0.5s ease;
+    margin: 23px 23px;
+    
+}
+.works  .card-03 {
+    position: relative;
+    overflow: hidden;
+    border-radius: 5px!important;
+    cursor: pointer;
+    width: 600px;
+    height: 600px;
+    transition: opacity 0.5s ease, transform 0.5s ease;
+    margin: 23px 23px;
+    
 }
