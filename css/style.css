@@ -15,7 +15,7 @@ ul{
     top: 0;
 } */
  body{
-    background-color: #86546D;
+    background-color: #86546D !important;
  }
  :root {
             /* Inner shadow */
@@ -63,6 +63,9 @@ ul{
     border: 0.1px solid rgb(254 254 254 / 18%);
     stroke: 0.1px solid white;
 } */
+ .header {
+    position: fixed;
+}
  
 nav {
     display: flex;
@@ -79,14 +82,14 @@ nav {
     box-shadow: 0px 6px var(--outer-shadow-blur) rgba(0, 0, 0, 0.2);
 }
 
-    nav::before {
+nav::before {
     content: '';
     position: absolute;
     inset: 0;
     z-index: 0;
     border-radius: 77px;
-    box-shadow: inset var(--shadow-offset) var(--shadow-offset) var(--shadow-blur) var(--shadow-spread) rgb(255 255 255 / 9%);
-    background-color: rgb(255 255 255 / 24%);
+    box-shadow: inset var(--shadow-offset) var(--shadow-offset) var(--shadow-blur) var(--shadow-spread) rgb(255 255 255 / -43%);
+    background-color: rgb(118 113 117 / 22%);
 }
 
     nav::after {
@@ -131,13 +134,64 @@ nav ul {
     width: -webkit-fill-available;
     padding: 27px 20px;
 }
+/* From Uiverse.io by cssbuttons-io */ 
+.btn {
+  position: relative;
+  font-size: 17px;
+  text-transform: uppercase;
+  text-decoration: none;
+  padding: 1em 2.5em;
+  display: inline-block;
+  cursor: pointer;
+  border-radius: 6em;
+  transition: all 0.2s;
+  border: none;
+  font-family: inherit;
+  font-weight: 500;
+  color: black;
+  background-color: rgba(255, 255, 255, 0.566);
+}
+
+.btn:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+}
+
+.btn:active {
+  transform: translateY(-1px);
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+}
+
+.btn::after {
+  content: "";
+  display: inline-block;
+  height: 100%;
+  width: 100%;
+  border-radius: 100px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: -1;
+  transition: all 0.4s;
+}
+
+.btn::after {
+  background-color: #fff;
+}
+
+.btn:hover::after {
+  transform: scaleX(1.4) scaleY(1.6);
+  opacity: 0;
+}
+
+
 /* hero-section */
-#hero{
-    background-image:url(../img/Rectangle\ 29.png);
+#hero {
+    background-image: url(../img/Rectangle\ 29.png);
+    background-position: 0px 0px;
     background-size: cover;
     height: 100vh;
     width: 100%;
-
 }
 
 .hero-cnt{
@@ -497,21 +551,48 @@ p {
     column-gap: -1px;
     width: 1113px;
 }
-.box-1 img{
+.box-1 img {
     position: relative;
     align-items: center;
     justify-content: center;
+    margin-left: 60px;
+    margin-top: 44px;
 }
-.box-2 img{
+.box-2 img {
     position: relative;
-    
-
+    margin-left: 63px;
+    margin-top: 45px;
 }
 .box-3 img{
     position: relative;
+    margin-left: 50px;
+    margin-top: 36px;
 }
 .box-4 img{
     position: relative;
+    margin-left: 50px;
+    margin-top: 36px;
+}
+.box-2 p {
+    margin-top: 36px;
+    margin-left: 20px;
+    color: black;
+}
+.box-1 p {
+    margin-top: 32px;
+    margin-left: 44px;
+    color: black;
+   
+}
+.box-3 p {
+    margin-top: 44px;
+    margin-left: 38px;
+    color: black;
+}
+.box-4 p {
+    margin-top: 29px;
+    margin-left: 45px;
+    color: black;
 }
 
 
@@ -521,7 +602,6 @@ p {
     margin: 50px auto;
     padding: 20px;
     text-align: center;
-    margin-bottom: 20px;
 }
 .edu-cnt h2{
     font-family: "Merienda", cursive;
@@ -772,10 +852,10 @@ span.year {
     justify-content: center;
 }
 .round-1 {
-    width: 102px;
-    height: 208px;
+    width: 150px;
+    height: 290px;
     background-color: #AF94A2;
-    border-radius: 50px;
+    border-radius: 130px;
     position: relative;
     display: flex;
     justify-content: center;
@@ -784,14 +864,14 @@ span.year {
     margin-bottom: 103px;
 }
 .round-1 span {
-    width: 95px;
-    height: 96px;
+    width: 133px;
+    height: 136px;
     background-color: #8C8C8C;
     border-radius: 50%;
     /* display: block; */
     border: 1px solid#d6c4d3;
     /* display: flex; */
-    margin-top: 100px;
+    margin-top: 136px;
 }
 .round-1 span {
     position: absolute;
@@ -827,22 +907,22 @@ span.year {
             -webkit-filter: url("#glass-distortion");
         }
 .round-2 {
-    width: 102px;
-    height: 208px;
+    width: 150px;
+    height: 290px;
     background-color: #AF94A2;
-    border-radius: 50px;
+    border-radius: 130px;
     position: relative;
     display: flex;
     justify-content: center;
     align-items: center;
     box-shadow: 2px 2px 0 #a17699;
-    margin-top: 111px;
+    margin-top: 198px;
 }
 
 .round-2 span {
-    margin-bottom: 96px;
-    width: 95px;
-    height: 96px;
+    margin-bottom: 135px;
+    width: 133px;
+    height: 136px;
     background-color: #8C8C8C;
     border-radius: 50%;
     display: block;
@@ -882,6 +962,33 @@ span.year {
             -webkit-backdrop-filter: blur(var(--frost-blur));
             -webkit-filter: url("#glass-distortion");
         }
+.img-1 {
+    margin-left: 24px;
+    margin-top: 20px;
+}
+        .img-2 {
+    vertical-align: middle;
+    height: 80px;
+    margin-left: 26px;
+    margin-top: 24px;
+}
+.img-3 {
+    
+    margin-top: 30px;
+    margin-left: 23px;
+}
+img.img-4 {
+    margin-left: 24px;
+    margin-top: 35px;
+}
+img.img-5 {
+    margin-top: 26px;
+    margin-left: 32px;
+}
+img.img-6 {
+    margin-top: 40px;
+    margin-left: 32px;
+}
 .tool-cnt {
     display: flex;
     align-items: center;
@@ -929,6 +1036,7 @@ span.year {
     -webkit-text-fill-color: transparent;
 }
 .bg-btn a {
+    position: relative;
     display: flex;
     border-radius: 68px;
     color: white;
@@ -951,18 +1059,17 @@ span.year {
     margin-left: 480px;
 }
 
-        .bg-btn a ::before {
-            content: '';
-            position: absolute;
-            inset: 0;
-            z-index: 0;
-            border-radius: 28px;
-            box-shadow:
-                inset var(--shadow-offset) var(--shadow-offset) var(--shadow-blur) var(--shadow-spread) var(--shadow-color);
-            background-color: rgb(255, 255, 255);
-        }
+  .bg-btn a::before {
+    content: '';
+    position: relative;
+    inset: 0;
+    z-index: 0;
+    border-radius: 28px;
+    box-shadow: inset var(--shadow-offset) var(--shadow-offset) var(--shadow-blur) var(--shadow-spread) var(--shadow-color);
+    background-color: #86546D;
+}
 
-        .bg-btn a ::after {
+        .bg-btn a                             ::after {
             content: '';
             position: absolute;
             inset: 0;
@@ -979,6 +1086,20 @@ span.year {
     margin-left: 90px;
 }    
 /* get in touch */
+.contact-info h2 {
+    font-family: "Merienda", cursive;
+    font-size: calc(1.325rem + .9vw);
+    color: white;
+    font-size: 35px;
+}
+.contact-info p {
+    color: white;
+    margin-top: -41px;
+}
+.cntct-img {
+    vertical-align: middle;
+    margin-top: -54px;
+}
 .contact-cnt {
     height: 100wh;
     height: 100vh;
@@ -1092,6 +1213,7 @@ b, strong {
     isolation: isolate;
     touch-action: none;
     box-shadow: 0px 6px var(--outer-shadow-blur) rgba(0, 0, 0, 0.2);
+    margin-top: 526px;
 }
 
 .get-touch::before {
@@ -1120,18 +1242,72 @@ b, strong {
     position: relative;
 }
 /* footer */
-nav ul a{
-    text-decoration: none;
-    color: white;
+section#footer {
+    background: #AF94A2;
+    margin-top: 235px;
+    padding: 25px;
+}
+
+.footer-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 0 20px;
+  flex-wrap: wrap;
+}
+
+.footer-left {
+  font-size: 24px;
+  font-weight: bold;
+  color: #86546d;
+}
+
+.footer-menu {
+  list-style: none;
+  display: flex;
+  gap: 20px;
+  flex-wrap: wrap;
+  padding: 0;
+  margin: 10px 0;
+}
+
+.footer-menu li a {
+  text-decoration: none;
+  color: #000;
+  font-weight: 500;
+}
+
+.footer-right {
+  font-size: 14px;
+  color: #333;
+}
+
+.social-icons {
+  margin-top: 30px;
+}
+
+.scl-icons-og a {
+    color: #fff;
+    background-color: #AF94A2;
+    margin: 0 10px;
+    padding: 10px 15px;
+    border-radius: 50%;
+    margin-top: 15px;
+    display: inline-block;
+    font-size: 16px;
+    transition: 0.3s;
+}
+
+.social-icons a:hover {
+  background-color: #6a3e58;
+}
+.scl-icons-og {
+    /* background: linear-gradient(174deg, #36111D, #A0073A); */
     display: flex;
     align-items: center;
     justify-content: center;
-}
-nav ul {
-    position: relative;
-    display: flex;
-    justify-content: space-between;
-    gap: 45px;
-    margin: 0;
-    align-items: center;
+    border-radius: 100px;
+    color: white;
 }
