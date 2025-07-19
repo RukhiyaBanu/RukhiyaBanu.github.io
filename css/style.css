@@ -412,7 +412,7 @@ header nav ul a:hover::before {
     touch-action: none;
     box-shadow: 0px 6px var(--outer-shadow-blur) rgba(0, 0, 0, 0.2);
     margin-top: 145px;
-    margin-left: 65px;
+    margin-left: 155px;
 }
 
         .about-cnt::before {
@@ -721,7 +721,7 @@ p {
     display: flex;
     column-gap: -1px;
     width: 1113px;
-    margin-left: -105px;
+    margin-left: -10px;
 }
 
 
