@@ -357,6 +357,11 @@ header nav ul a:hover::before {
 .resum-btn a{
     color: white;
 }
+.resum-btn img{
+    
+    margin-top: -9px;
+}
+
 .social-icons{
     background: linear-gradient(174deg, #36111D, #A0073A);
     padding: 15px 20px;
@@ -368,6 +373,9 @@ header nav ul a:hover::before {
     position: absolute;
     margin-top: 173px;
 }
+/* img {
+    margin-top: -69px;
+} */
 /* about section */
 .mt-60{
     margin-top: 123px;
@@ -404,7 +412,7 @@ header nav ul a:hover::before {
     touch-action: none;
     box-shadow: 0px 6px var(--outer-shadow-blur) rgba(0, 0, 0, 0.2);
     margin-top: 145px;
-    margin-left: 148px;
+    margin-left: 65px;
 }
 
         .about-cnt::before {
@@ -476,11 +484,7 @@ header nav ul a:hover::before {
     width: 66.66666667%;
     margin-top: 30px;
 }
-/* .about{
-    display: flex;
-    align-items: center;
-    
-} */
+
 .cntct-btn {
     background: linear-gradient(174deg, #36111D, #A0073A);
     padding: 5px 30px;
@@ -713,6 +717,12 @@ p {
     margin-left: 45px;
     color: black;
 }
+.box-cnt {
+    display: flex;
+    column-gap: -1px;
+    width: 1113px;
+    margin-left: -105px;
+}
 
 
 /* education */
@@ -878,7 +888,7 @@ span.year {
 .works .card-3 img{
     filter: grayscale(1);
 }
-.works .card-2 img:hover{
+.works .card-3 img:hover{
     filter: grayscale(0);
 }
 .works .card-4 img{
@@ -1164,7 +1174,7 @@ img.img-6 {
     padding: 15px 40px;
     transition: all 0.2s ease-in-out;
     border: 2px solid rgb(206, 206, 206);
-    margin-left: 550px;
+    margin-left: 466px;
     margin-top: -77px;
 }
 
@@ -1177,7 +1187,7 @@ img.img-6 {
   box-shadow: inset 2px 2px 5px #bcbcbc, inset -2px -2px 5px #ffffff, 2px 2px 5px #bcbcbc, -2px -2px 5px #ffffff;
 }
 img.Vector-img.aos-init.aos-animate {
-    margin-left: 98px;
+    margin-left: 6px;
 } 
 /* get in touch */
 .contact-info h2 {
@@ -1262,10 +1272,6 @@ b, strong {
     gap: 30px;
 }
 
-    /* .row {
-      display: flex;
-      gap: 20px;
-    } */
 
     input, textarea {
       flex: 1;
@@ -1398,7 +1404,7 @@ section#footer {
   background-color: #6a3e58;
 }
 .scl-icons-og {
-    /* background: linear-gradient(174deg, #36111D, #A0073A); */
+    
     display: flex;
     align-items: center;
     justify-content: center;
@@ -1452,7 +1458,7 @@ section#footer {
 html {
   scroll-behavior: smooth;
 }
-.footer-menu .P1{
+/* .footer-menu .P1{
    transition: 0.3s;
 }
 .footer-menu:hover .P1{
@@ -1488,4 +1494,4 @@ html {
 }
 .footer-menu:hover .P6{
     transform: scale(1.1);
-}  
+}   */
